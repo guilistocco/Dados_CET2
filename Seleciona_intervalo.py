@@ -8,15 +8,15 @@ rad_Sum_Brasil = [5415,5483,5126,5471,5470,5316,5315,5313,5314,5358,5357,5355,53
 ### ------------ ESCOLHER AQUI ---------------- ###
 
 ## os limites se referem ao intervalo de horas 
-Limite_inf_inclusive = 7
+Limite_inf_inclusive = 7   # não seleciona por minutos, por ex: 7:30 não funciona, só 7 e 8
 Limite_sup = 9
 
 ## os radares devem ser escolhidos entre:       rad_Rebou      rad_23     rad_Sum_Brasil
 
-radares = rad_23
+radares = rad_Sum_Brasil
 
 ### ------------------------------------------- ###
-## colocar o caminho até a a pasta em que estão os CSVs
+## colocar o caminho até a pasta em que estão os CSVs dos radares
 
 
 
@@ -33,4 +33,6 @@ for loc in radares:
 
 
 ## data_frame resultado dessa operação recorte do arquivo original
+
+data_frame.to_csv('dia08.03.2008_selecionado.csv')
 
