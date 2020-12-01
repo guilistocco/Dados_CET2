@@ -47,4 +47,4 @@ for name in dias:
         df_group.columns=['Vel_media']
         print(df_group.head())
         
-        df_group.to_csv(path4 + '\\' + str(name) + "_group_"+ freq +".csv")
+       # df_group.to_csv(path4 + '\\' + str(name) + "_group_"+ freq +".csv")
